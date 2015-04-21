@@ -8,12 +8,12 @@
         
         <h1>GWT Theo - Working example</h1>
         
-        <p>This is a working app where the theme as been built with <a href="http://">GWT Theo</a>. The theme is managing Colors, Sizes and Fonts variables. It also uses icons <i class="{theme.icons.icon_heart}"></i> built with <a href="http://icomoon.io">IcoMoon</a>.</p>
+        <p>This is a working app where the theme as been built with <a href="http://www.github.com/arcbees/gwt-theo">GWT Theo</a>. The theme is managing Colors, Sizes and Fonts variables. It also uses icons <i class="{theme.icons.icon_heart}"></i> built with <a href="http://icomoon.io">IcoMoon</a>.</p>
         
         <p>A side effect of using GWT Theo is the generation of a style guide, <a href="/_theme-guide/index.html">available here</a>!</p>
         
         <p class="{res.style.is_centered}">
-            <a href="#" class="{res.style.btn}"><i class="{theme.icons.icon_github}"></i> Get GWT Theo</a>
+            <a href="http://www.github.com/arcbees/gwt-theo" class="{res.style.btn}"><i class="{theme.icons.icon_github}"></i> Get GWT Theo</a>
         </p>
         
     </g:HTMLPanel>
