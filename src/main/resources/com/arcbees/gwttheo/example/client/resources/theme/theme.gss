@@ -1,0 +1,34 @@
+/**
+ * -> WARNING, this is a generated file. Use GWT-Theo if you want to modify it.
+ */
+
+@provide 'theme';
+
+/**
+ * Colors
+ */
+
+@def C_PRIMARY eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_PRIMARY");
+@def C_PRIMARY_LIGHT eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_PRIMARY_LIGHT");
+@def C_SECONDARY eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_SECONDARY");
+@def C_SECONDARY_LIGHT eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_SECONDARY_LIGHT");
+@def C_SECONDARY_DARK eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_SECONDARY_DARK");
+@def C_BACKGROUND eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_BACKGROUND");
+@def C_TEXT eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_TEXT");
+@def C_TEXT_LIGHT eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_TEXT_LIGHT");
+@def C_TEXT_DARK eval("com.arcbees.gwttheo.example.client.resources.theme.Colors.C_TEXT_DARK");
+
+/**
+ * Fonts
+ */
+
+@def F_PRIMARY eval("com.arcbees.gwttheo.example.client.resources.theme.Fonts.F_PRIMARY");
+@def F_PRIMARY_LIGHT eval("com.arcbees.gwttheo.example.client.resources.theme.Fonts.F_PRIMARY_LIGHT");
+@def F_PRIMARY_BOLD eval("com.arcbees.gwttheo.example.client.resources.theme.Fonts.F_PRIMARY_BOLD");
+
+/**
+ * Sizes
+ */
+
+@def S_LINEHEIGHT eval("com.arcbees.gwttheo.example.client.resources.theme.Sizes.S_LINEHEIGHT");
+@def S_SPACING eval("com.arcbees.gwttheo.example.client.resources.theme.Sizes.S_SPACING");

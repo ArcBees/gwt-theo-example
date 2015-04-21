@@ -1,0 +1,44 @@
+{
+  "global": {
+    "type": "color",
+    "category": "color",
+    "classname": "Colors",
+    "title": ""
+  },
+  "props": {
+    "title-app": {
+      "value": "App colors"
+    },
+    "C_PRIMARY": {
+      "value": "#4C6170"
+    },
+    "C_PRIMARY_LIGHT": {
+      "value": "#94A1ad"
+    },
+    "C_SECONDARY": {
+      "value": "#cbb390"
+    },
+    "C_SECONDARY_LIGHT": {
+      "value": "#f8e6c4"
+    },
+    "C_SECONDARY_DARK": {
+      "value": "#2e1913"
+    },
+    
+    "title-default": {
+      "value": "Default colors"
+    },
+    "C_BACKGROUND": {
+      "value": "#f8f3e9"
+    },
+    "C_TEXT": {
+      "value": "#444"
+    },
+    "C_TEXT_LIGHT": {
+      "value": "#fff"
+    },
+    "C_TEXT_DARK": {
+      "value": "#000"
+    }
+  }
+}

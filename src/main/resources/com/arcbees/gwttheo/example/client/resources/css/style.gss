@@ -1,0 +1,128 @@
+/**
+ * STYLE.GSS
+ * Default application style
+ *
+ * - REQUIRE - DEF              Require and images def
+ * - INIT                       Document initialization
+ * - LAYOUT                     Container, Wrapper, Stripe
+ * - ELEMENTS                   Default style for elements like <p> and <a>
+ */
+
+
+/* -- Require - Def -------------------------------------- */
+
+@require "theme";
+
+
+/* -- Init ----------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 979px) {
+    html {
+        font-size: 59%;
+    }
+}
+
+@media (max-width: 649px) {
+    html {
+        font-size: 56%;
+    }
+}
+
+body {
+    color: C_TEXT;
+    background-color: C_BACKGROUND;
+    font-family: F_PRIMARY;
+    font-size: 1.5rem;
+}
+
+
+/* -- Wrapper -------------------------------------------- */
+
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 979px) {
+    .wrapper {
+        width: 650px;
+    }
+}
+
+@media (max-width: 649px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+
+/* -- Elements ------------------------------------------- */
+
+h1 {
+    color: C_SECONDARY_DARK;
+    font-family: F_PRIMARY_LIGHT;
+    
+    margin: S_SPACING;
+}
+
+p {
+    line-height: S_LINEHEIGHT;
+}
+
+a {
+    color: C_TEXT;
+    text-decoration: none;
+    
+    border-bottom: 1px dotted C_PRIMARY;
+}
+
+a:hover {
+    background-color: C_SECONDARY;
+    
+    border: 0;
+}
+
+.btn {
+    font-size: 2rem;
+    color: C_BACKGROUND;
+    font-weight: 300;
+    background-color: C_SECONDARY;
+    
+    padding: .5em 1em;
+    border: 0;
+    border-radius: 5px;
+
+    position: relative;
+    top: 2em;
+    
+    transition: background-color .25s;
+}
+
+.btn:hover {
+    background-color: C_SECONDARY_DARK;
+}
+
+.btn > i {
+    font-size: 145%;
+    vertical-align: sub;
+    
+    margin-right: .3em;
+}
+
+
+/* -- Classes ------------------------------------------- */
+
+.is_centered {
+    text-align: center;
+}
