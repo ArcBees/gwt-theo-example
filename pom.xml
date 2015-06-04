@@ -53,41 +53,13 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>${maven-checkstyle-plugin.version}</version>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>1.9.21</version>
+                
                 <configuration>
-                    <configLocation>/checkstyle.xml</configLocation>
-                    <suppressionsLocation>/suppressions.xml</suppressionsLocation>
-                    <propertyExpansion>basedir=${basedir}</propertyExpansion>
-                    <consoleOutput>true</consoleOutput>
-                    <failsOnError>true</failsOnError>
-                    <linkXRef>false</linkXRef>
-                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <oauth2>true</oauth2>
                 </configuration>
-
-                <dependencies>
-                    <dependency>
-                        <groupId>com.puppycrawl.tools</groupId>
-                        <artifactId>checkstyle</artifactId>
-                        <version>${checkstyle.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>com.arcbees</groupId>
-                        <artifactId>checkstyle</artifactId>
-                        <version>${arcbees-checkstyle.version}</version>
-                    </dependency>
-                </dependencies>
-
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>checkstyle</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             
             <!-- GWT -->
@@ -122,16 +94,14 @@
             </plugin>
         </plugins>
     </build>
-
-    <!-- GWT (BOM) -->
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.google.gwt</groupId>
-                <artifactId>gwt</artifactId>
+                <artifactId>gwt-dev</artifactId>
                 <version>${gwt.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -141,10 +111,14 @@
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
+            <version>${gwt.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-codeserver</artifactId>
+            <version>${gwt.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- GWTP -->
