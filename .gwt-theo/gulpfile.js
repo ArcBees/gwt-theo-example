@@ -74,10 +74,6 @@ gulp.task('styleguide', function () {
     gulp.src(paths.themeFiles + '/icons/style.css')
       .pipe(rename('icons.css'))
       .pipe(gulp.dest(paths.generated));
-    // Add styleguide style
-    gulp.src('./node_modules/gwt-theo/dist/props/formats/html.css')
-      .pipe(rename('style.css'))
-      .pipe(gulp.dest(paths.generated));
     // Get the icons
     iconsData = getIcons();
   } 
@@ -85,6 +81,10 @@ gulp.task('styleguide', function () {
   else {
     iconsData = [];
   }
+  // Add styleguide style
+  gulp.src('./node_modules/gwt-theo/dist/props/formats/html.css')
+      .pipe(rename('style.css'))
+      .pipe(gulp.dest(paths.generated));
   // Generate styleguide
   return gulp.src(paths.themeProperties + '/theme.json')
     .pipe(gwtTheo.plugins.transform('raw'))
